@@ -54,9 +54,11 @@ p {
         }
 .row {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .column {
+
+.column {
     flex: 33.33%;
     padding: 5px;
   }
@@ -71,9 +73,33 @@ p {
     display:block;
     z-index:999;
 }
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+  }
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
 .seven {
     height: 142px;
     width: 1920px;
     background-color: rgb(230, 240, 215);
+}
+
+.h4{
+    display: flex;
+    margin: 50px;
+    font-family: "brandon-grotesque",sans-serif;
+    font-weight: 600;
+    color:  rgb(105, 11, 11);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.headers {
+    display: flex;
+
 }
